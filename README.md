@@ -8,7 +8,7 @@ do DataModule `uConexao`.
 1. Extraia o ZIP.
 2. Abra `PostoABC.dpr` no RAD Studio 12.
 3. Certifique-se de que o pacote Fortes Report CE está instalado no Delphi (componentes RL* disponíveis).
-4. Crie o banco executando `db/script_criacao.sql` ou use seu .fdb.
+4. Crie o banco executando `db/script_criacao.sql` ou use seu .fdb. (Firebird 3.0)
 5. Execute o projeto e use "Relatórios" → "Gerar Relatório".
 
 ## Observações
