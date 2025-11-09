@@ -19,9 +19,9 @@ object frmRelatorio: TfrmRelatorio
   TextHeight = 17
   object SpeedButton1: TSpeedButton
     Left = 60
-    Top = 211
+    Top = 196
     Width = 220
-    Height = 45
+    Height = 74
     Caption = '&Gerar Relat'#243'rio'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

@@ -35,7 +35,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 36
     Top = 184
     Width = 312
-    Height = 88
+    Height = 126
     Caption = 'Novo &Abastecimento'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clHighlight
@@ -517,7 +517,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 365
     Top = 184
     Width = 312
-    Height = 88
+    Height = 126
     Caption = '&Relat'#243'rios'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clHighlight

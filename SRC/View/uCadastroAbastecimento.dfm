@@ -3,7 +3,7 @@ object frmCadastroAbastecimento: TfrmCadastroAbastecimento
   Top = 0
   BorderStyle = bsToolWindow
   Caption = 'Lan'#231'ar abastecimento'
-  ClientHeight = 370
+  ClientHeight = 399
   ClientWidth = 552
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,14 +20,13 @@ object frmCadastroAbastecimento: TfrmCadastroAbastecimento
     Left = 0
     Top = 0
     Width = 552
-    Height = 370
+    Height = 399
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 523
-    ExplicitHeight = 269
+    ExplicitHeight = 370
     DesignSize = (
       552
-      370)
+      399)
     object lblBomba: TLabel
       Left = 24
       Top = 122
@@ -114,9 +113,9 @@ object frmCadastroAbastecimento: TfrmCadastroAbastecimento
     end
     object btnSalvar: TSpeedButton
       Left = 154
-      Top = 298
+      Top = 302
       Width = 244
-      Height = 45
+      Height = 74
       Anchors = [akLeft, akTop, akRight]
       Caption = '&Salvar'
       Font.Charset = DEFAULT_CHARSET
@@ -216,7 +215,6 @@ object frmCadastroAbastecimento: TfrmCadastroAbastecimento
         0000}
       ParentFont = False
       OnClick = SpeedButton1Click
-      ExplicitWidth = 220
     end
     object Image1: TImage
       Left = 24
