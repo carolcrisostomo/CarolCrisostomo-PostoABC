@@ -45,6 +45,7 @@ type
     RLDBResult1: TRLDBResult;
     RLDBResult2: TRLDBResult;
     RLDBResult3: TRLDBResult;
+    RLPanel1: TRLPanel;
     qryTotalGeral: TFDQuery;
     dsTotalGeral: TDataSource;
     RLBand4: TRLBand;

@@ -45,6 +45,7 @@ type
     RLDBResult1: TRLDBResult;
     RLDBResult2: TRLDBResult;
     RLDBResult3: TRLDBResult;
+    RLPanel1: TRLPanel;
     qryTotalGeral: TFDQuery;
     dsTotalGeral: TDataSource;
     RLBand4: TRLBand;
@@ -67,6 +68,11 @@ type
     RlLblLitros: TRLLabel;
     RlLblValor: TRLLabel;
     RLLabel1: TRLLabel;
+    qryTotalPorBomba: TFDQuery;
+    FMTBCDField1: TFMTBCDField;
+    FMTBCDField2: TFMTBCDField;
+    FMTBCDField3: TFMTBCDField;
+    dsTotalPorBomba: TDataSource;
     RLImage2: TRLImage;
     RLDBResult4: TRLDBResult;
     procedure RLSystemInfo4BeforePrint(Sender: TObject; var AText: string;

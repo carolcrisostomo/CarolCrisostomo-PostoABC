@@ -1783,6 +1783,13 @@ object frmRelAbastecimento: TfrmRelAbastecimento
       end
     end
   end
+  object RLPanel1: TRLPanel
+    Left = 808
+    Top = 96
+    Width = 64
+    Height = 32
+    Transparent = False
+  end
   object qryRelatorio: TFDQuery
     SQL.Strings = (
       'SELECT'
@@ -1972,6 +1979,75 @@ object frmRelAbastecimento: TfrmRelAbastecimento
   object dsTotalGeral: TDataSource
     DataSet = qryTotalGeral
     Left = 288
+    Top = 8
+  end
+  object qryTotalPorBomba: TFDQuery
+    Connection = dmConexao.FDConnection
+    SQL.Strings = (
+      'SELECT'
+      '    sum(A.Valor) as TotalValor,'
+      '    sum(A.Litros) as TotalLitros,'
+      '    sum(A.Imposto) as TotalImpostos'
+      'FROM'
+      '    Abastecimento A'
+      'INNER JOIN'
+      '    BombaTanque BT ON A.IdBombaTanque = BT.IdBombaTanque'
+      'INNER JOIN'
+      '    Tanque T ON T.IdTanque = BT.IdTanque'
+      'INNER JOIN'
+      '    Bomba B ON B.IdBomba = BT.IdBomba'
+      'INNER JOIN'
+      '    Combustivel C ON C.IdCombustivel = T.IdCombustivel'
+      'WHERE '
+      '    A.DataAbast BETWEEN :DataInicio AND :DataFinal     ')
+    Left = 400
+    Top = 8
+    ParamData = <
+      item
+        Name = 'DATAINICIO'
+        DataType = ftDate
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'DATAFINAL'
+        DataType = ftDate
+        ParamType = ptInput
+      end>
+    object FMTBCDField1: TFMTBCDField
+      AutoGenerateValue = arDefault
+      FieldName = 'TOTALVALOR'
+      Origin = 'TOTALVALOR'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '###,###.00'
+      Precision = 18
+      Size = 2
+    end
+    object FMTBCDField2: TFMTBCDField
+      AutoGenerateValue = arDefault
+      FieldName = 'TOTALLITROS'
+      Origin = 'TOTALLITROS'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '######,00'
+      Precision = 18
+      Size = 2
+    end
+    object FMTBCDField3: TFMTBCDField
+      AutoGenerateValue = arDefault
+      FieldName = 'TOTALIMPOSTOS'
+      Origin = 'TOTALIMPOSTOS'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '###,###.00'
+      Precision = 18
+      Size = 2
+    end
+  end
+  object dsTotalPorBomba: TDataSource
+    DataSet = qryTotalPorBomba
+    Left = 480
     Top = 8
   end
 end

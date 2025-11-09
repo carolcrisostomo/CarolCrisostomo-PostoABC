@@ -1783,6 +1783,13 @@ object frmRelAbastecimento: TfrmRelAbastecimento
       end
     end
   end
+  object RLPanel1: TRLPanel
+    Left = 808
+    Top = 96
+    Width = 64
+    Height = 32
+    Transparent = False
+  end
   object qryRelatorio: TFDQuery
     SQL.Strings = (
       'SELECT'
